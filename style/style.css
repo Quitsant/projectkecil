@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--font_color1);
+    font-family: sans-serif;
+}
+
+:root {
+    --font_color1: white;
+    --font_color2: rgb(255, 212, 157);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #0d1321;
+}
+
+
+/* editor navbar */
+nav {
+    background: linear-gradient(to right, #3a506b, #101726);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    border-bottom: 2px solid #0d1321;
+    position: fixed;
+}
+
+nav .judul {
+    margin-left: 3rem;
+    color: var(--font_color1);
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+
+nav .judul span {
+    color: var(--font_color2);
+}
+
+nav .subnav {
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* style konten */
+#Home {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pengenalan {
+    font-size: 22px;
+    margin-left: 10rem;
+    text-align: center;
+}
+
+.gambar img {
+    width: 42rem;
+    filter: brightness(50%);
+}
+
+/* reposotori */
+#repositori {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    box-shadow: inset;
+    background-color: #101726;
+    border: 2px solid black;
+    width: 30vh;
+    height: 45vh;
+    display: inline;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.box1 img {
+    width: 26vh;
+    border-radius: 5%;
+    margin-top: 3rem;
+}
+
+.box1 p {
+    margin-top: 8vh;
+    font-size: 4vh;
+    font-weight: 800;
+    
+}
