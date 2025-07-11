@@ -11,8 +11,8 @@
     <nav>
         <div class="judul">Porto<span>folio</span></div>
         <div class="subnav">
-            <p><a href="">Home</a></p>
-            <p><a href="">repositori</a></p>
+            <p><a href="#Home">Home</a></p>
+            <p><a href="#repositori">repositori</a></p>
             <p><a href="">contact</a></p>
         </div>
     </nav>
@@ -21,7 +21,7 @@
     <div id="Home">
         <div class="pengenalan">
             <h1>Hai, Perkenalkan aku</h1>
-            <h2 style="font-size: 1.8rem;">Quitsant</h2>
+            <h2>Quitsant</h2>
             <p >Seorang developer Frontend</p>
         </div>
         <div class="gambar">
@@ -30,10 +30,17 @@
     </div>
 
     <div id="repositori">
-        <div id="box1" class="box1">
-            <img src="style/foto.jpg">
-            <p>portofolio 1</p>
+        <h1 class="judulrepo">Project - project ku</h1>
+        <div class="penampungan">
+            <div id="box1" class="box1" onclick="window.open('https://greaty.vercel.app', '_blank')">
+                <img src="style/box1.webp">
+                <p>Greaty Memes website</p>
+            </div>
         </div>
     </div>
+
+
+
+    <script src="app/app.js"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@
     text-decoration: none;
     color: var(--font_color1);
     font-family: sans-serif;
+    text-shadow: 2px 2px  25px black;
+    transition: ease-in-out 152ms;
 }
 
 :root {
@@ -22,7 +24,8 @@ body {
 nav {
     background: linear-gradient(to right, #3a506b, #101726);
     width: 100%;
-    height: 10vh;
+    height: 5.625rem;
+    max-height: 5.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,10 +36,13 @@ nav {
 }
 
 nav .judul {
+    transition: ease 152ms;
     margin-left: 3rem;
     color: var(--font_color1);
     font-weight: 800;
     font-size: 2.1rem;
+    text-shadow: 1px 1px 50px black;
+    cursor: default;
 }
 
 nav .judul span {
@@ -51,8 +57,24 @@ nav .subnav {
     margin-right: 5rem;
     font-size: 1.2rem;
     font-weight: 700;
+
+}
+nav .subnav p {
+    transition: ease 152ms;
 }
 
+nav .subnav p:hover {
+    transform: scale(1.1);
+}
+
+nav .subnav p:checked {
+    transform: scale(1.1);
+    color: rgb(197, 197, 197);
+}
+
+nav .menu-toggle {
+    display: none;
+}
 
 /* style konten */
 #Home {
@@ -66,47 +88,135 @@ nav .subnav {
 
 .pengenalan {
     font-size: 22px;
-    margin-left: 10rem;
+    margin-left: 150px;
     text-align: center;
+}
+
+.pengenalan h2 {
+    font-size: 1.8rem;
 }
 
 .gambar img {
     width: 42rem;
-    filter: brightness(50%);
+}
+
+.judulrepo {
+    padding-top: 200px;
+    margin-bottom: -120px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    cursor: default;
 }
 
 /* reposotori */
 #repositori {
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 98vh;
+}
+
+#repositori .penampungan {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .box1 {
-    box-shadow: inset;
+    box-shadow: 5px 5px 25px black;
     background-color: #101726;
     border: 2px solid black;
     width: 30vh;
-    height: 45vh;
+    height: 38vh;
     display: inline;
     text-align: center;
     justify-content: center;
     align-items: center;
     border-radius: 5%;
+    transition: ease-in-out 152ms;
+}
+
+.box1:hover {
+    transform: scale(1.04);
+    cursor: pointer;
 }
 
 .box1 img {
-    width: 26vh;
+    width: 23vh;
     border-radius: 5%;
     margin-top: 3rem;
+    box-shadow:1px 1px 25px black;
 }
 
 .box1 p {
-    margin-top: 8vh;
-    font-size: 4vh;
+    margin-top: 5vh;
+    font-size: 3.2vh;
     font-weight: 800;
+}
+
+
     
+@media (max-width: 700px) {
+    nav {
+        width: 100%;
+    }
+
+    nav .judul {
+        transition: ease 152ms;
+        font-size: 24px;
+        margin-left: 22px;
+    }
+
+    nav .subnav {
+        transform: scale(0.62);
+        gap: 40px;
+        margin-right: -32px;
+    }
+
+    nav .menu-toggle {
+        display: flex;
+        margin-right: 3rem;
+        z-index: 20;
+    }
+
+
+    /* style konten */
+    #Home {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        align-items: center;
+    }
+
+    .pengenalan {
+        font-size: 8px;
+        margin-left: 20px;
+    }
+
+    .pengenalan h2 {
+        font-size: 1.5rem;
+    }
+
+    .pengenalan p {
+        font-size: larger;
+    }
+
+    .gambar img {
+        width: 200px;
+    }
+
+    #repositori {
+        width: 100%;
+    }
+
+    .judulrepo {
+        font-size: 25px;
+        margin-bottom: -12rem;
+    }
+
+    .box1 {
+        transform: scale(0.7);
+    }
 }
